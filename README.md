@@ -58,4 +58,73 @@ de forma presentable.
 
 
 
-🌴 Cotizador de Paquetes Turísticos ✈️Proyecto Práctico de Fundamentos de ProgramaciónParadigma: Programación Estructurada y Secuencial📖 Contexto del ProblemaUna agencia de viajes requiere un sistema automatizado para generar cotizaciones rápidas para familias. El sistema debe calcular el costo total de un viaje, aplicando descuentos automáticos para los niños en los vuelos y en el hospedaje, para finalmente calcular la comisión de la agencia de viajes.📥 Requerimientos de EntradaEl programa debe solicitar al usuario ingresar los siguientes datos por teclado (consola):👨‍👩‍👧 Cantidad de adultos👦 Cantidad de niños🌙 Días de estancia (noches de hotel)🎫 Costo estándar del vuelo (tarifa base por adulto)🏨 Costo estándar de hospedaje (tarifa base por noche por adulto)⚙️ Reglas de Negocio y Cálculos (Salidas Esperadas)El sistema procesará los datos de entrada para imprimir el desglose de la cotización basándose en las siguientes reglas de negocio:✈️ Costo total de vuelos:Los adultos pagan la tarifa completa.Los niños tienen un descuento del 50% en su vuelo.Se debe mostrar la suma total a pagar por los vuelos de toda la familia.🛏️ Costo total de hospedaje:Los adultos pagan la tarifa completa por noche.Los niños pagan solo el 30% de la tarifa de adulto por noche.Se debe mostrar el total del hotel por todas las noches de toda la familia.🧮 Subtotal del Viaje:La suma exacta del costo total de vuelos y el costo total de hospedaje.💼 Comisión de la Agencia:La agencia cobra una tarifa de servicio equivalente al 12% del Subtotal del viaje.💰 Costo Total del Paquete:El Gran Total a cobrar al cliente (Subtotal + Comisión).⚠️ Restricciones Técnicas y EstructuraPara evaluar el dominio de la programación estructurada y la modularidad, se deben cumplir estrictamente las siguientes reglas:🛑 CERO ESTRUCTURAS DE CONTROL: > Queda absolutamente prohibido el uso de if, else, switch, for, while o do-while. El flujo debe ser 100% secuencial.📁 Arquitectura de Dos ArchivosLa solución debe dividirse en dos archivos .java:🛠️ Archivo 1: Clase de Herramientas/CálculosDebe contener únicamente métodos estáticos (public static) que realicen las operaciones matemáticas.💡 Sugerencias de métodos: calcularDescuento(), calcularCostoGrupal(), calcularPorcentaje(), etc.▶️ Archivo 2: Clase Principal (Main)Debe contener el método main. Su única responsabilidad es:Leer los datos usando Scanner.Invocar los métodos del Archivo 1 en el orden lógico correcto.Mostrar el desglose de resultados en consola de forma presentable.Desarrollado para la práctica de métodos y lógica secuencial en Java. ☕
+# 🌴 Cotizador de Paquetes Turísticos ✈️
+
+**Proyecto Práctico de Fundamentos de Programación**
+
+*Paradigma: Programación Estructurada y Secuencial*
+
+---
+
+## 📖 Contexto del Problema
+
+Una agencia de viajes requiere un sistema automatizado para generar **cotizaciones rápidas para familias**. El sistema debe calcular el costo total de un viaje, aplicando descuentos automáticos para los niños en los vuelos y en el hospedaje, para finalmente calcular la comisión de la agencia de viajes.
+
+## 📥 Requerimientos de Entrada
+
+El programa debe solicitar al usuario ingresar los siguientes datos por teclado (consola):
+
+* 👨‍👩‍👧 **Cantidad de adultos**
+* 👦 **Cantidad de niños**
+* 🌙 **Días de estancia** (noches de hotel)
+* 🎫 **Costo estándar del vuelo** (tarifa base por adulto)
+* 🏨 **Costo estándar de hospedaje** (tarifa base por noche por adulto)
+
+## ⚙️ Reglas de Negocio y Cálculos (Salidas Esperadas)
+
+El sistema procesará los datos de entrada para imprimir el desglose de la cotización basándose en las siguientes reglas de negocio:
+
+1. ✈️ **Costo total de vuelos:**
+   * Los adultos pagan la tarifa completa.
+   * Los niños tienen un descuento del **50%** en su vuelo.
+   * *Se debe mostrar la suma total a pagar por los vuelos de toda la familia.*
+
+2. 🛏️ **Costo total de hospedaje:**
+   * Los adultos pagan la tarifa completa por noche.
+   * Los niños pagan solo el **30%** de la tarifa de adulto por noche.
+   * *Se debe mostrar el total del hotel por todas las noches de toda la familia.*
+
+3. 🧮 **Subtotal del Viaje:**
+   * La suma exacta del costo total de vuelos y el costo total de hospedaje.
+
+4. 💼 **Comisión de la Agencia:**
+   * La agencia cobra una tarifa de servicio equivalente al **12%** del Subtotal del viaje.
+
+5. 💰 **Costo Total del Paquete:**
+   * El Gran Total a cobrar al cliente (*Subtotal + Comisión*).
+
+## ⚠️ Restricciones Técnicas y Estructura
+
+Para evaluar el dominio de la programación estructurada y la modularidad, se deben cumplir **estrictamente** las siguientes reglas:
+
+> 🛑 **CERO ESTRUCTURAS DE CONTROL:** > Queda absolutamente prohibido el uso de `if`, `else`, `switch`, `for`, `while` o `do-while`. El flujo debe ser 100% secuencial.
+
+### 📁 Arquitectura de Dos Archivos
+
+La solución debe dividirse en dos archivos `.java`:
+
+#### 🛠️ Archivo 1: Clase de Herramientas/Cálculos
+
+Debe contener **únicamente** métodos estáticos (`public static`) que realicen las operaciones matemáticas.
+*💡 Sugerencias de métodos:* `calcularDescuento()`, `calcularCostoGrupal()`, `calcularPorcentaje()`, etc.
+
+#### ▶️ Archivo 2: Clase Principal (`Main`)
+
+Debe contener el método `main`. Su **única responsabilidad** es:
+1. Leer los datos usando `Scanner`.
+2. Invocar los métodos del *Archivo 1* en el orden lógico correcto.
+3. Mostrar el desglose de resultados en consola de forma presentable.
+
+---
+
+*Desarrollado para la práctica de métodos y lógica secuencial en Java. ☕*
