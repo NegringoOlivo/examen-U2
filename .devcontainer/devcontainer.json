@@ -1,0 +1,33 @@
+{
+  
+    "name": "Examen Java - Entorno Restringido",
+    "image": "mcr.microsoft.com/devcontainers/java:17", // Puedes cambiar a 11 o 21 según necesites
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                // Desactivar Copilot e IA
+                "github.copilot.enable": { "*": false },
+                "github.copilot.editor.enableAutoCompletions": false,
+                "chat.disableAIFeatures": true,
+                
+                // Evitar que VS Code sugiera instalar extensiones "populares"
+                "extensions.ignoreRecommendations": true,
+                "extensions.autoCheckUpdates": false,
+                "extensions.autoUpdate": false,
+                
+                // Configuración de Java básica
+                "java.completion.enabled": true,
+                "java.debug.settings.onBuildFailure": "ignore"
+            },
+            "extensions": [
+                "vscjava.vscode-java-pack" // Pack esencial (Language Support, Debugger, Maven/Gradle)
+            ]
+        }
+    },
+    // Comando para asegurar que el entorno esté limpio al iniciar
+    "postCreateCommand": "echo 'Entorno de examen listo. Git y Java configurados.'"
+
+}
